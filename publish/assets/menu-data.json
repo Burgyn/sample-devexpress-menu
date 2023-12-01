@@ -1,0 +1,43 @@
+[
+    {
+        "title": "Fakturácia",
+        "icon": "fakturacia",
+        "items": [
+            {"title": "Odoslané faktúry", "route": "odoslane-faktury", "color": "#b25959"},
+            {"title": "Zálohové faktúry", "route": "zalohove-faktury", "color": "#b28f59"},
+            {"title": "Pravidelné faktúry", "route": "pravidelne-faktury", "color":"#a1b259"}
+        ]
+    },
+    {
+        "title": "Obchod",
+        "icon": "obchod",
+        "items": [
+            {"title": "Cenové ponuky", "route": "cenove-ponuky", "color":"#6bb259"},
+            {"title": "Došlé objednávky", "route": "dosle-objednavky", "color":"#59b27d"},
+            {"title": "Odoslané objednávky", "route": "odoslane-objednavky", "color":"#59b2b2"},
+            {"title": "Dodacie listy", "route": "dodacie-listy", "color":"#597db2"}
+        ]
+    },
+    {
+        "title": "Výdavky",
+        "icon": "nakup",
+        "items": [
+            {"title": "Došlé faktúry", "route": "dosle-faktury", "color":"#6b59b2"},
+            {"title": "Bločky", "route": "blocky", "color":"#a159b2"}
+        ]
+    },
+    {
+        "title": "Sklad",
+        "icon": "sklad",
+        "items": [
+            {"title": "Skladové karty", "route": "skladove-karty", "color":"#b2598f"},
+            {"title": "Pohyby", "route": "pohyby"},
+            {"title": "Prehľad pohybov", "route": "prehľad-pohybov", "color":"#8659b2"}
+        ]
+    },
+    {"title": "Banky", "icon": "banky", "route": "banky"},
+    {"title": "Prehľady", "icon": "prehlady", "route": "prehľady"},
+    {"title": "Partneri", "icon": "partneri", "route": "partneri"},
+    {"title": "Cenník", "icon": "cennik", "route": "cennik"},
+    {"title": "Archív", "icon": "archiv", "route": "archiv"}
+]
