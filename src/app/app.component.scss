@@ -33,6 +33,15 @@
     // height: 100vh;
     // width: fit-content;
     // background-color: #2a2a2a;
+    height: calc(100dvh - 46px); // 46px = height of toolbar
+}
+
+.dx-template-wrapper {
+    height: 100%;
+}
+
+.dx-accordion {
+  height: 100%;
 }
 
 .band-ico {
@@ -52,9 +61,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // width: fit-content;
   }
-  
+
   .band-ico-small {
     /* Nastavte veľkosť ikonky pre zbalený stav */
     width: 20px;
@@ -65,3 +73,23 @@
     /* Nastavte menšiu veľkosť textu pre zbalený stav */
     font-size: 12px;
   }
+
+  ::ng-deep .dx-accordion-item{
+    border: 0px;
+  }
+
+  .items-open-drawer {
+    padding-left: 21px
+  }
+
+  .initial-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  

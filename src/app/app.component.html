@@ -3,9 +3,10 @@
   </dxi-item>
 </dx-toolbar>
 <div class="drawer-container">
-  <dx-drawer [position]="'left'" [revealMode]="'expand'" [(opened)]="isDrawerOpen" template="template" [minSize]="70">
+  <dx-drawer [position]="'left'" [revealMode]="'expand'" [(opened)]="isDrawerOpen" template="template" [minSize]="isDrawerOpen ? 200 : 70">
     <div *dxTemplate="let data of 'template'">
-      <dx-accordion [dataSource]="menuItems" itemTitleTemplate="title" [width]="200" [multiple]="true"
+      <dx-accordion [dataSource]="menuItems" itemTitleTemplate="title" [width]="isDrawerOpen ? 200 : 70" [multiple]="true"
+        (onItemTitleClick)="onTitleClick($event)"
         [collapsible]="true" [animationDuration]="100">
         <div *dxTemplate="let band of 'title'">
           <ng-container *ngIf="isDrawerOpen; else collapsedTemplate">
@@ -28,14 +29,28 @@
           </ng-template>
         </div>
         <div *dxTemplate="let band of 'item'">
-          <dx-list [items]="band.items" selectionMode="single"
-            itemTemplate="links">
-            <div *dxTemplate="let link of 'links'">
-              <a>
-                <span>{{ link.title }}</span>
-              </a>
-            </div>
-          </dx-list>
+          <ng-container *ngIf="band.items && band.items.length > 0">
+            <dx-list [items]="band.items" selectionMode="single" itemTemplate="links"
+              [ngClass]="{'items-open-drawer': isDrawerOpen}">
+              <!-- <div *dxTemplate="let link of 'links'">
+                <a>
+                  <span>{{ link.title }}</span>
+                </a>
+              </div> -->
+              <div *dxTemplate="let link of 'links'">
+                <ng-container *ngIf="!isDrawerOpen; else expandedTemplate">
+                  <div class="initial-circle" title="{{ link.title }}" [ngStyle]="{'background-color': link.color}">
+                    {{ link.title | firstLetter }}
+                  </div>
+                </ng-container>
+                <ng-template #expandedTemplate>
+                  <a>
+                    <span>{{ link.title }}</span>
+                  </a>
+                </ng-template>
+              </div>
+            </dx-list>
+          </ng-container>
         </div>
       </dx-accordion>
     </div>
