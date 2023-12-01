@@ -30,9 +30,17 @@
 }
 
 .drawer-container {
-    // height: 100vh;
+     height: calc(100dvh - 46px); // 46px = height of toolbar
     // width: fit-content;
     // background-color: #2a2a2a;
+}
+
+.dx-template-wrapper {
+    height: 100%;
+}
+
+.dx-accordion {
+  height: 100%;
 }
 
 .band-ico {
@@ -54,13 +62,13 @@
     align-items: center;
     // width: fit-content;
   }
-  
+
   .band-ico-small {
     /* Nastavte veľkosť ikonky pre zbalený stav */
     width: 20px;
     height: 20px;
   }
-  
+
   .small-text {
     /* Nastavte menšiu veľkosť textu pre zbalený stav */
     font-size: 12px;
