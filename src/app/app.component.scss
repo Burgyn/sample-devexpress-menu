@@ -29,8 +29,13 @@
     display: none;
 }
 
+::ng-deep .dx-drawer-wrapper .dx-drawer-panel-content {
+    overflow-y: auto;
+    width: 200px;
+}
+
 .drawer-container {
-    // height: 100vh;
+     height: calc(100dvh - 46px); // 46px = height of toolbar
     // width: fit-content;
     // background-color: #2a2a2a;
     height: calc(100dvh - 46px); // 46px = height of toolbar
@@ -44,6 +49,14 @@
   height: 100%;
 }
 
+.kros-template-wrapper {
+    height: 100%;
+}
+
+.dx-accordion {
+    min-height: 100%;
+}
+
 .band-ico {
     margin-right: 10px;
     vertical-align: bottom;
@@ -54,7 +67,7 @@
   }
 
   ::ng-deep .dx-list-item {
-    border-top: 0px;
+    border-top: 0;
   }
 
   .collapsed-band {
@@ -68,7 +81,7 @@
     width: 20px;
     height: 20px;
   }
-  
+
   .small-text {
     /* Nastavte menšiu veľkosť textu pre zbalený stav */
     font-size: 12px;
@@ -92,4 +105,4 @@
     align-items: center;
     font-weight: bold;
   }
-  
+}

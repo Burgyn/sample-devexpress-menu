@@ -3,9 +3,9 @@
   </dxi-item>
 </dx-toolbar>
 <div class="drawer-container">
-  <dx-drawer [position]="'left'" [revealMode]="'expand'" [(opened)]="isDrawerOpen" template="template" [minSize]="isDrawerOpen ? 200 : 70">
-    <div *dxTemplate="let data of 'template'">
-      <dx-accordion [dataSource]="menuItems" itemTitleTemplate="title" [width]="isDrawerOpen ? 200 : 70" [multiple]="true"
+  <dx-drawer [position]="'left'" [revealMode]="'expand'" [(opened)]="isDrawerOpen" template="template" [minSize]="70">
+    <div *dxTemplate="let data of 'template'" class="kros-template-wrapper">
+      <dx-accordion [dataSource]="menuItems" itemTitleTemplate="title" [multiple]="true"
         (onItemTitleClick)="onTitleClick($event)"
         [collapsible]="true" [animationDuration]="100">
         <div *dxTemplate="let band of 'title'">
@@ -58,3 +58,4 @@
       <router-outlet></router-outlet>
     </div>
   </dx-drawer>
+</div>
