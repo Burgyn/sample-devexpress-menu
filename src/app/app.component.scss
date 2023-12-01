@@ -1,0 +1,67 @@
+::ng-deep #toolbar {
+    padding: 5px 10px;
+}
+::ng-deep .dx-toolbar-button .dx-button {
+    border: none;
+}
+::ng-deep .dx-toolbar-button > .dx-toolbar-item-content {
+    margin-left: -7px;
+}
+::ng-deep .dx-list-item-icon {
+    margin-right: 10px;
+}
+::ng-deep #view {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.band {
+    color: #FFF;
+    text-align: left;
+    /* H5 - 16 */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+::ng-deep .dx-accordion-item-title::before {
+    display: none;
+}
+
+.drawer-container {
+    // height: 100vh;
+    // width: fit-content;
+    // background-color: #2a2a2a;
+}
+
+.band-ico {
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+
+.dx-list .dx-list-item {
+    border-bottom: none;
+  }
+
+  ::ng-deep .dx-list-item {
+    border-top: 0px;
+  }
+
+  .collapsed-band {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // width: fit-content;
+  }
+  
+  .band-ico-small {
+    /* Nastavte veľkosť ikonky pre zbalený stav */
+    width: 20px;
+    height: 20px;
+  }
+  
+  .small-text {
+    /* Nastavte menšiu veľkosť textu pre zbalený stav */
+    font-size: 12px;
+  }

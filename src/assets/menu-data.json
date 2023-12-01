@@ -1,0 +1,43 @@
+[
+    {
+        "title": "Fakturácia",
+        "icon": "fakturacia",
+        "items": [
+            {"title": "Odoslané faktúry", "route": "odoslane-faktury"},
+            {"title": "Zálohové faktúry", "route": "zalohove-faktury"},
+            {"title": "Pravidelné faktúry", "route": "pravidelne-faktury"}
+        ]
+    },
+    {
+        "title": "Obchod",
+        "icon": "obchod",
+        "items": [
+            {"title": "Cenové ponuky", "route": "cenove-ponuky"},
+            {"title": "Došlé objednávky", "route": "dosle-objednavky"},
+            {"title": "Odoslané objednávky", "route": "odoslane-objednavky"},
+            {"title": "Dodacie listy", "route": "dodacie-listy"}
+        ]
+    },
+    {
+        "title": "Výdavky",
+        "icon": "nakup",
+        "items": [
+            {"title": "Došlé faktúry", "route": "dosle-faktury"},
+            {"title": "Bločky", "route": "blocky"}
+        ]
+    },
+    {
+        "title": "Sklad",
+        "icon": "sklad",
+        "items": [
+            {"title": "Skladové karty", "route": "skladove-karty"},
+            {"title": "Pohyby", "route": "pohyby"},
+            {"title": "Prehľad pohybov", "route": "prehľad-pohybov"}
+        ]
+    },
+    {"title": "Banky", "icon": "banky", "route": "banky"},
+    {"title": "Prehľady", "icon": "prehlady", "route": "prehľady"},
+    {"title": "Partneri", "icon": "partneri", "route": "partneri"},
+    {"title": "Cenník", "icon": "cennik", "route": "cennik"},
+    {"title": "Archív", "icon": "archiv", "route": "archiv"}
+]
