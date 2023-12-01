@@ -4,8 +4,8 @@
 </dx-toolbar>
 <div class="drawer-container">
   <dx-drawer [position]="'left'" [revealMode]="'expand'" [(opened)]="isDrawerOpen" template="template" [minSize]="70">
-    <div *dxTemplate="let data of 'template'">
-      <dx-accordion [dataSource]="menuItems" itemTitleTemplate="title" [width]="200" [multiple]="true"
+    <div *dxTemplate="let data of 'template'" class="kros-template-wrapper">
+      <dx-accordion [dataSource]="menuItems" itemTitleTemplate="title" [multiple]="true"
         [collapsible]="true" [animationDuration]="100">
         <div *dxTemplate="let band of 'title'">
           <ng-container *ngIf="isDrawerOpen; else collapsedTemplate">
